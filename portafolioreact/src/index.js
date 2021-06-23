@@ -4,8 +4,6 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-
 // Posibles componentes del proyecto
 // Componente para el menu
 function navBar(){
