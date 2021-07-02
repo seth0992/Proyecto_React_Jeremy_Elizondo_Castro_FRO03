@@ -1,4 +1,3 @@
-//  <li className="navbar--list--item">
 import React from "react";
 import MenuItem from "../MenuItem/MenuItem";
 import Reloj from "../Reloj/Reloj";
@@ -12,13 +11,11 @@ function ListItem(props) {
   );
 }
 
-function activarMenuItem(e) {
-  e.preventDefault();
-  alert("El botón fue clikeado 2.");
-}
 class MenuBar extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = { estilo: "navbar--list" };
 
     this.ListText = [
       "Inicio",
@@ -29,11 +26,26 @@ class MenuBar extends React.Component {
       "Blog",
     ];
 
+    this.activarMenuItem = this.activarMenuItem.bind(this);
+
     this.MenuItemList = [];
 
     this.listItem = this.ListText.map((item, index) => (
       <ListItem key={index} valor={item} />
     ));
+  }
+
+  activarMenuItem(e) {
+    e.preventDefault();
+    if (this.state.estilo === "navbar--list") {
+      this.setState((state) => ({
+        estilo: "navbar--list show",
+      }));
+    } else {
+      this.setState((state) => ({
+        estilo: "navbar--list",
+      }));
+    }
   }
 
   render() {
@@ -49,7 +61,7 @@ class MenuBar extends React.Component {
             />
           </a>
 
-          <ul className="navbar--list" id="navbar--list">
+          <ul className={this.state.estilo} id="navbar--list">
             {this.listItem}
             <Reloj />
           </ul>
@@ -57,7 +69,7 @@ class MenuBar extends React.Component {
           <button
             className="navbar--button"
             id="navbar--button"
-            onClick={activarMenuItem}
+            onClick={this.activarMenuItem}
           >
             <i className="bx bx-menu" id="toggle-icon"></i>
           </button>

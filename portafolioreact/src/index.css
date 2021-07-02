@@ -149,10 +149,16 @@ body {
 .show {
   display: flex;
 }
-
+.mostrarImg {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
 .hero {
   /* background: url(${process.env.PUBLIC_URL + "../../public/recursos/image/bg/bg02.jpg"}) #110503 center
     center; */
+  background-color: #110503;
+  background-position: center;
   background-size: cover;
 }
 
@@ -161,7 +167,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .hero--content {
@@ -177,10 +183,7 @@ body {
 .hero--content p {
   font-size: 1.2rem;
 }
-.mostrarImg {
-  background-color: transparent;
-  border: none;
-}
+
 .hero--image {
   width: 60%;
   border: 1px solid #f0eff4;

@@ -21,9 +21,9 @@ class HeroBanner extends React.Component {
         className="hero paddingHelper section"
         id="home"
         style={{
-          background: `url(${
+          backgroundImage: `url(${
             process.env.PUBLIC_URL + "/recursos/image/bg/bg02.jpg"
-          }) #110503 center center;`,
+          })`,
         }}
       >
         <div className="hero--container">
