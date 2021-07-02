@@ -39,6 +39,7 @@ class HeroBanner extends React.Component {
             </p>
           </div>
           <div className="hero--image">
+            {/* Condicional render */}
             <button className="mostrarImg" onClick={this.manejarClick}>
               {this.state.estaActivo ? (
                 <img
