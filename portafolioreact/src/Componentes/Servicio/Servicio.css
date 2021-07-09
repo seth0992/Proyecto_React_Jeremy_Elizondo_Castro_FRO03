@@ -1,0 +1,48 @@
+.service--item {
+  background-color: #fff;
+  width: 320px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  position: relative;
+  margin-bottom: 3rem;
+  margin-right: 0.5rem;
+  box-shadow: 6px 6px 6px #d9d9d9, -6px -6px 6px #e7e7e7;
+}
+.service--item p:first-child {
+  font-size: 2.4rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  color: #219ebc;
+}
+.service--item p:nth-child(3) {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 0 2rem 0rem;
+  margin: 0;
+}
+.service--item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.service--item-icon {
+  position: absolute;
+  width: 60px;
+  border: 2px solid #023047;
+  padding: 0.5rem;
+  border-radius: 50%;
+  bottom: -45px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #d9d9d9, -3px -3px 3px #e7e7e7;
+}
+.service--item-icon img {
+  width: 100%;
+  z-index: 9;
+}

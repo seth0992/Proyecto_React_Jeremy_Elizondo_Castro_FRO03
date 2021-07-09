@@ -1,0 +1,79 @@
+.contact {
+  background-color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.label {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #023047;
+  font-size: 1.2rem;
+}
+
+.contact--form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-input {
+  width: 45%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-textarea {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  padding-right: 2.6rem;
+  flex-direction: column;
+}
+
+.input--form {
+  border-radius: 45px;
+  padding: 1.2rem;
+  font-size: 1rem;
+  border: 0;
+  color: #023047;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: White;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.089);
+}
+.input--form:hover {
+  border: 1px solid #ffb703;
+}
+
+.content-button {
+  width: 100%;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.content-button button {
+  padding: 1rem 4rem;
+  border-radius: 35px;
+  color: #ffb703;
+  background-color: #023047;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.content-button button:hover {
+  color: #023047;
+  background-color: #ffb703;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 767.98px) {
+  .content-input {
+    width: 95%;
+  }
+
+  .content-textarea {
+    padding-right: 0rem;
+  }
+}

@@ -5,6 +5,11 @@ import MenuBar from "./Componentes/MenuBar/MenuBar";
 // import App from './App';
 import reportWebVitals from "./reportWebVitals";
 import HeroBanner from "./Componentes/HeroBanner/HeroBanner";
+import Perfil from "./Componentes/Perfil/Perfil";
+import Servicios from "./Componentes/Servicios/Servicios";
+import Trabajos from "./Componentes/Trabajos/Trabajos";
+import Contacto from "./Componentes/Contacto/Contacto";
+import Conversor from "./Componentes/Conversor/Conversor";
 // Posibles componentes del proyecto
 // Componente para el menu
 // function navBar() {
@@ -16,21 +21,21 @@ import HeroBanner from "./Componentes/HeroBanner/HeroBanner";
 //   return <div>Sección para el hero banner</div>;
 // }
 // Componente para la información personal
-function perfil() {
-  return <div>Sección para la información personal</div>;
-}
+// function perfil() {
+//   return <div>Sección para la información personal</div>;
+// }
 // Componente para los servicios del portafolio
-function servicios() {
-  return <div>Sección para los servicios</div>;
-}
+// function servicios() {
+//   return <div>Sección para los servicios</div>;
+// }
 // Componente para los trabajos realizados
-function trabajos() {
-  return <div>Sección para la información personal</div>;
-}
+// function trabajos() {
+//   return <div>Sección para la información personal</div>;
+// }
 // Componente para el formulario de contacto
-function contacto() {
-  return <div>Sección para el formulario de contacto</div>;
-}
+// function contacto() {
+//   return <div>Sección para el formulario de contacto</div>;
+// }
 // Componente para el footer
 function footer() {
   return <div>Sección para el footer</div>;
@@ -49,13 +54,12 @@ ReactDOM.render(
   [
     <MenuBar />,
     <HeroBanner />,
-    perfil(),
-    servicios(),
-    trabajos(),
-    contacto(),
+    <Perfil />,
+    <Servicios />,
+    <Trabajos />,
+    <Contacto />,
+    <Conversor />,
     footer(),
-    paginaBlog(),
-    blogEntrada(),
   ],
   // </React.StrictMode>,
 
@@ -66,3 +70,5 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+//    paginaBlog(),
+// blogEntrada(),
