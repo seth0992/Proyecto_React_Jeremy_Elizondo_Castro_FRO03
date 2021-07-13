@@ -4,12 +4,7 @@ import "./index.css";
 import MenuBar from "./Componentes/MenuBar/MenuBar";
 // import App from './App';
 import reportWebVitals from "./reportWebVitals";
-import HeroBanner from "./Componentes/HeroBanner/HeroBanner";
-import Perfil from "./Componentes/Perfil/Perfil";
-import Servicios from "./Componentes/Servicios/Servicios";
-import Trabajos from "./Componentes/Trabajos/Trabajos";
-import Contacto from "./Componentes/Contacto/Contacto";
-import Conversor from "./Componentes/Conversor/Conversor";
+
 // Posibles componentes del proyecto
 // Componente para el menu
 // function navBar() {
@@ -51,16 +46,7 @@ function blogEntrada() {
 
 ReactDOM.render(
   // <React.StrictMode>
-  [
-    <MenuBar />,
-    <HeroBanner />,
-    <Perfil />,
-    <Servicios />,
-    <Trabajos />,
-    <Contacto />,
-    <Conversor />,
-    footer(),
-  ],
+  [<MenuBar />],
   // </React.StrictMode>,
 
   document.getElementById("root")
