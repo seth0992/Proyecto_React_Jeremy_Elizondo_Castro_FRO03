@@ -1,23 +1,13 @@
 import React from "react";
 import MenuItem from "../MenuItem/MenuItem";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-  useHistory,
-  useLocation,
-  Prompt,
-  useRouteMatch,
-} from "react-router-dom";
-import Reloj from "../Reloj/Reloj";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import Reloj from "../Reloj/Reloj";
 import HeroBanner from "../../Componentes/HeroBanner/HeroBanner";
 import Perfil from "../../Componentes/Perfil/Perfil";
 import Servicios from "../../Componentes/Servicios/Servicios";
 import Trabajos from "../../Componentes/Trabajos/Trabajos";
 import Contacto from "../../Componentes/Contacto/Contacto";
-
+import { ServiciosHook } from "../ServiciosHook/ServiciosHook";
 function ListItem(props) {
   return (
     <li className="navbar--list--item">
@@ -103,7 +93,7 @@ class MenuBar extends React.Component {
                 <Perfil />
               </Route>
               <Route path="/Servicios">
-                <Servicios />
+                <ServiciosHook />
               </Route>
               <Route path="/Portafolio">
                 <Trabajos />
